@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header>
+        <span class="log">Teachinder</span>
+        <button class="search">Search</button>
+        <input type="text" class="searchInput" placeholder="Enter name to search">
+
+        <section class="m">
+            <span class="menu1">Teachers</span>
+            <span class="menu">Statistics</span>
+            <span class="menu">Favourites</span>
+            <span class="menu">About</span>
+
+
+            <form class="add" action="#addWin"><button class="addBut"> Add Teacher </button></form>
+
+        </section>
+
+        <div id="addWin" class="container">
+            <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+            <div class="winText">Add Teacher</div>
+            <form>
+
+                <div class="a">Name</div>
+                <input class="in" name="name">
+
+
+                <div class="a">Country</div>
+                <input class="in" name="country">
+
+                <div class="a">City</div>
+                <input name="city" class="in">
+
+                <div class="a">Phone</div>
+                <input type="tel" class="in">
+
+
+                <div class="a">Email</div>
+                <input type="email" class="in">
+
+                <div class="a">Age</div>
+                <input class="in">
+
+
+                <div class="a">Sex
+                    <span><input type="radio" name="male" id="male" class="check">Male</span>
+                    <span><input type="radio" name="female" id="female" class="check">Female</span>
+                </div>
+
+
+                <div class="a">
+                    <span>Backgroung color</span>
+                    <input type="color" class="color">
+                </div>
+
+                <button class="addwinBut">Add</button>
+
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="line"></div>
+    </header>
+
+
+    <main>
+
+        <div class="top">Top Teachers</div>
+
+        <section class="filter">
+            <span>Filter by: </span>
+            <input type="checkbox"><label class="check">Show only with photo</label>
+            <span class="vertical_dotted_line"></span>
+            <input type="checkbox"><label class="check">Show only favourites</label>
+        </section>
+
+
+        <div class="wrapper">
+
+            <details>
+                <summary>
+
+                    <a href="#okno"> <img src="man4.jpg" alt="pic" class="photo1"> </a>
+                    <span class="name"> Mykyta</span>
+                    <span class="surname"> Makeev</span>
+                    <span class="country">Ukraine</span>
+                </summary>
+
+            </details>
+
+            <div id="okno" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="man4.jpg" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Mykyta Makeev</span>
+                    <span class="info">Kyiv, Ukraine</span>
+                    <span class="info">36, M</span>
+                    <span class="infoE">mykyta.makeev@domain.com</span>
+                    <span class="info">+3809999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+
+                    <a href="#okno2"> <img src="man2.jpg" alt="pic" class="photo1"> </a>
+                    <span class="name">Vidit</span>
+                    <span class="surname">Balakrishnan</span>
+                    <span class="country">India</span>
+
+
+                </summary>
+
+            </details>
+
+            <div id="okno2" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="man2.jpg" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Vidit Balakrishnan</span>
+                    <span class="info">Mumbai, India</span>
+                    <span class="info">36, M</span>
+                    <span class="infoE">vidit.balakrishan@domain.com</span>
+                    <span class="info">+7409999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+                    <span class="container">
+                        <a href="#okno3"> <img src="woman1.jpg" alt="pic" class="photo1"></a>
+                        <img src="star.png" alt="" class="star">
+                    </span>
+                    <span class="name">Erica</span>
+                    <span class="surname">Jansen</span>
+                    <span class="country">Denmark</span>
+
+                </summary>
+
+            </details>
+
+            <div id="okno3" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="woman1.jpg" alt="" class="winPhoto">
+                <img src="star.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Erica Jansen</span>
+                    <span class="info">Copenhagen, Denmark</span>
+                    <span class="info">26, F</span>
+                    <span class="infoE">erica.jansen@domain.com</span>
+                    <span class="info">+4759999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+
+                    <a href="#okno4"> <img src="man3.jpg" alt="pic" class="photo1"> </a>
+                    <span class="name">John</span>
+                    <span class="surname">Burke</span>
+                    <span class="country">Belgium</span>
+
+
+                </summary>
+
+            </details>
+
+            <div id="okno4" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="man3.jpg" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">John Burke</span>
+                    <span class="info">Bruissel, Belgium</span>
+                    <span class="info">26, M</span>
+                    <span class="infoE">john.burke@domain.com</span>
+                    <span class="info">+9909999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+                    <span class="container">
+                        <a href="#okno5"> <img src="woman2.jpg" alt="pic" class="photo1"> </a>
+                        <img src="star.png" alt="" class="star">
+                    </span>
+                    <span class="name">Ari</span>
+                    <span class="surname">Tang</span>
+                    <span class="country">China</span>
+
+                </summary>
+
+            </details>
+
+            <div id="okno5" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="woman2.jpg" alt="" class="winPhoto">
+                <img src="star.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Ari Tang</span>
+                    <span class="info">Pekin, China</span>
+                    <span class="info">22, F</span>
+                    <span class="infoE">ari.tang@domain.com</span>
+                    <span class="info">+8809999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+                    <a href="#okno6"> <img src="woman3.jpg" alt="pic" class="photo1"> </a>
+                    <span class="name">Rachel</span>
+                    <span class="surname">Andrew</span>
+                    <span class="country">UK</span>
+
+                </summary>
+
+            </details>
+
+            <div id="okno6" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="woman3.jpg" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Rachel Andrew</span>
+                    <span class="info">London, UK</span>
+                    <span class="info">30, F</span>
+                    <span class="infoE">rachel.andrew@domain.com</span>
+                    <span class="info">+7779999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+                    <span class="container">
+                        <a href="#okno7"> <img src="white.png" alt="" class="photo1"></a>
+                        <span class="initials">A. M.</span>
+                    </span>
+                    <span class="name">Anna</span>
+                    <span class="surname">Makarevich</span>
+                    <span class="country">Belarus</span>
+
+                </summary>
+
+            </details>
+
+            <div id="okno7" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="no-user.gif" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Anna Makarevich</span>
+                    <span class="info">Minsk, Belarus</span>
+                    <span class="info">32, F</span>
+                    <span class="infoE">anna.makarevich@domain.com</span>
+                    <span class="info">+3309999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+            <details>
+                <summary>
+
+                    <span class="container">
+                        <a href="#okno8"> <img src="white.png" alt="" class="photo1"></a>
+                        <span class="initials">R. L.</span>
+                    </span>
+
+                    <span class="name">Radoslaw</span>
+                    <span class="surname">Ljuboevic</span>
+                    <span class="country">Poland</span>
+
+
+                </summary>
+
+            </details>
+
+            <div id="okno8" class="container">
+                <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
+                <div class="winText">Teacher Info</div>
+                <img src="no-user.gif" alt="" class="winPhoto">
+                <img src="s.png" class="starWin" alt="">
+                <div class="wrapper2">
+                    <span class="winName">Radoslaw Ljuboevic</span>
+                    <span class="info">Warshaw, Poland</span>
+                    <span class="info">36, M</span>
+                    <span class="infoE">radoslaw.ljuboevic@domain.com</span>
+                    <span class="info">+09999910043</span>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus commodo massa ac ultricies. Phasellus quis leo ex. Donec erat dolor, commodo sed porttitor sed, blandit vitae ex. Nullam auctor quam quis dolor condimentum sodales.
+                    Quisque auctor luctus arcu, ut auctor leo gravida vitae. Donec velit dolor...</div>
+                <span class="more">toggle map</span>
+                <div class="horizontal_dotted_line"></div>
+
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+        <div class="top">Statistics</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col">Name</th>
+                    <th class="col">Age</th>
+                    <th class="col">Gender</th>
+                    <th class="col">Nationality</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dalsy Alexander</th>
+                    <td>28</td>
+                    <td>Female</td>
+                    <td>Vietnam</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Julia Bradley</th>
+                    <td>26</td>
+                    <td>Female</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Rita Hart</th>
+                    <td>41</td>
+                    <td>Female</td>
+                    <td>Ireland</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Jonathan Jacobs</th>
+                    <td>32</td>
+                    <td>Male</td>
+                    <td>England</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Nathaniel White</th>
+                    <td>37</td>
+                    <td>Male</td>
+                    <td>Australia</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Frank Medina</th>
+                    <td>43</td>
+                    <td>Male</td>
+                    <td>Italy</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Ella Curtis</th>
+                    <td>34</td>
+                    <td>Female</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Claire Simmmons</th>
+                    <td>38</td>
+                    <td>Female</td>
+                    <td>Netherlands</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Bengamin Knight</th>
+                    <td>44</td>
+                    <td>Male</td>
+                    <td>Scotland</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Norma Rose</th>
+                    <td>36</td>
+                    <td>Female</td>
+                    <td>France</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="numbers">
+            <button class="one">1</button>
+            <button class="two">2</button>
+            <button class="three">3</button>
+            <button class="points">...</button>
+            <button class="one">Last</button>
+        </div>
+
+
+        <div class="line"></div>
+        <div class="top">Favourites</div>
+
+
+
+        <div class="arrow-2">
+            <div class="arrow-2-top"></div>
+            <div class="arrow-2-bottom"></div>
+        </div>
+
+        <div class="arrow">
+            <div class="arrow-top"></div>
+            <div class="arrow-bottom"></div>
+        </div>
+
+
+
+        <div class="wrapper">
+
+            <details>
+                <summary>
+
+                    <a href="#okno"> <img src="man4.jpg" alt="pic" class="photo1"> </a>
+                    <span class="name"> Mykyta</span>
+                    <span class="surname"> Makeev</span>
+                    <span class="country">Ukraine</span>
+
+                </summary>
+
+            </details>
+
+            <details>
+                <summary>
+
+                    <span class="container">
+                        <a href="#okno7"><img src="white.png" alt="" class="photo1"></a>
+                        <span class="initials">A. M.</span>
+                    </span>
+                    <span class="name">Anna</span>
+                    <span class="surname">Makarevich</span>
+                    <span class="country">Belarus</span>
+
+                </summary>
+
+            </details>
+
+            <details>
+                <summary>
+
+
+                    <a href="#okno4"><img src="man3.jpg" alt="pic" class="photo1"></a>
+                    <span class="name">John</span>
+                    <span class="surname">Burke</span>
+                    <span class="country">Belgium</span>
+
+
+
+                </summary>
+
+            </details>
+
+            <details>
+                <summary>
+
+
+                    <a href="#okno5"> <img src="woman2.jpg" alt="pic" class="photo1"></a>
+                    <span class="name">Ari</span>
+                    <span class="surname">Tang</span>
+                    <span class="country">China</span>
+
+
+
+                </summary>
+
+            </details>
+
+            <details>
+                <summary>
+
+
+                    <a href="#okno3"> <img src="woman1.jpg" alt="pic" class="photo1"></a>
+                    <span class="name">Erica</span>
+                    <span class="surname">Jansen</span>
+                    <span class="country">Denmark</span>
+
+
+
+                </summary>
+            </details>
+
+
+        </div>
+
+        <div class="line"></div>
+
+    </main>
+
+    <footer>
+
+        <div class="foot">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci neque, fermentum non ornare a, mattis vitae sapien. Nulla mi turpis, tincidunt sed felis et, consectetur condimentum neque. Vestibulum congue ullamcorper interdum. Sed quis
+            erat lorem. Nulla facilisi. Fusce arcu elit, egestas at mi quis, viverra sodales ipsum.</div>
+
+        <div class="foot">Fusce egestas fringilla nisl, faucibus interdum risus mattis id. Donec consectetur lobortis lorem, nec dapibus sapien molestie nec.</div>
+
+        <div class="foot">Proin vel maximus nibh. Cras tincidunt ornare libero, nec laoreet turpis imperdiet id. Phasellus in sollicitudin urna. Duis pulvinar nisi urna, eu lacinia ex interdum quis. </div>
+
+        <section class="m" id="wrapper">
+            <span class="menu2">Teachers</span>
+            <span class="menu22">Statistics</span>
+            <span class="menu22">Favourites</span>
+            <span class="menu22">About</span>
+            <form class="add" action="#addWin"><button class="addBut"> Add Teacher </button></form>
+        </section>
+
+    </footer>
+
+
+</body>
+
+</html>
