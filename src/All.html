@@ -17,16 +17,18 @@
         <button class="search">Search</button>
         <input type="text" class="searchInput" placeholder="Enter name to search">
 
-        <section class="m">
-            <span class="menu1">Teachers</span>
-            <span class="menu">Statistics</span>
-            <span class="menu">Favourites</span>
-            <span class="menu">About</span>
+        <nav class="m">
 
+            <ul>
+                <li class="menu">Teachers</li>
+                <li class="menu">Statistics</li>
+                <li class="menu">Favourites</li>
+                <li class="menu">About</li>
+            </ul>
 
             <form class="add" action="#addWin"><button class="addBut"> Add Teacher </button></form>
 
-        </section>
+        </nav>
 
         <div id="addWin" class="container">
             <a href="#" class="x"><img src="X.png" class="x" alt=""></a>
@@ -55,8 +57,8 @@
 
 
                 <div class="a">Sex
-                    <span><input type="radio" name="male" id="male" class="check">Male</span>
-                    <span><input type="radio" name="female" id="female" class="check">Female</span>
+                    <label for="male" class="check2">Man</label><input type="radio" id="male">
+                    <label for="female" class="check2">Female</label><input type="radio" id="female">
                 </div>
 
 
@@ -564,17 +566,22 @@
 
         <div class="foot">Proin vel maximus nibh. Cras tincidunt ornare libero, nec laoreet turpis imperdiet id. Phasellus in sollicitudin urna. Duis pulvinar nisi urna, eu lacinia ex interdum quis. </div>
 
-        <section class="m" id="wrapper">
-            <span class="menu2">Teachers</span>
-            <span class="menu22">Statistics</span>
-            <span class="menu22">Favourites</span>
-            <span class="menu22">About</span>
+        <nav>
+
+            <ul class="m">
+                <li class="menu2">Teachers</li>
+                <li class="menu2">Statistics</li>
+                <li class="menu2">Favourites</li>
+                <li class="menu2">About</li>
+            </ul>
+
             <form class="add" action="#addWin"><button class="addBut"> Add Teacher </button></form>
-        </section>
+
+        </nav>
 
     </footer>
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
