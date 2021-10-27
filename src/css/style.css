@@ -49,12 +49,13 @@ body {
     color: #f75c49;
     font-size: 20px;
     margin-top: 40px;
+    margin-left: -6%;
 }
 
 .menu {
-    margin-top: 40px;
     margin-left: 2%;
     font-size: 20px;
+    display: inline-block;
 }
 
 .menu:hover {
@@ -80,6 +81,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-left: 37%;
+    margin-top: -45%;
 }
 
 .add {
@@ -89,7 +91,7 @@ body {
 }
 
 .line {
-    margin: 70px 15% 30px 15%;
+    margin: 60px 15% 30px 15%;
     border-bottom: 2px solid black;
 }
 
@@ -118,13 +120,13 @@ body {
 
 .photo1 {
     border-radius: 100px;
-    border: 3px solid #f99589;
+    border: 4px solid #f99589;
     width: 90px;
     height: 90px;
 }
 
 .photo1:hover {
-    border: 3px solid #cc4836;
+    border: 4px solid #cc4836;
 }
 
 .container {
@@ -140,10 +142,9 @@ body {
 }
 
 .initials {
-    cursor: pointer;
     position: absolute;
     top: 45%;
-    left: 45%;
+    left: 35%;
     color: #f75c49;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
@@ -159,7 +160,7 @@ body {
 }
 
 .photo1 {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 details>summary {
@@ -224,12 +225,12 @@ td {
 
 .col {
     font-size: 17px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .col:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
     background-color: #fafafa;
 }
 
@@ -391,14 +392,9 @@ tbody tr:nth-child(even) {
 }
 
 .menu2 {
-    color: #65a3be;
-    margin-left: -5%;
-}
-
-.menu22 {
-    margin-top: 40px;
     margin-left: 2%;
     font-size: 20px;
+    display: inline-block;
     color: #65a3be;
 }
 
@@ -458,6 +454,8 @@ tbody tr:nth-child(even) {
 .winText {
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .starWin {
@@ -504,12 +502,11 @@ tbody tr:nth-child(even) {
     float: left;
     text-align: left;
     color: #65a3be;
-    padding-top: 15px;
 }
 
 .horizontal_dotted_line {
     margin-left: 5%;
-    padding-top: 32px;
+    padding-top: 20px;
     border-bottom: 3px dotted #65a3be;
     width: 80px;
 }
@@ -522,7 +519,7 @@ tbody tr:nth-child(even) {
 
 #addWin {
     z-index: 9999;
-    width: 20%;
+    width: 300px;
     height: 600px;
     padding: 1%;
     border: 1px solid rgb(41, 41, 41);
@@ -564,17 +561,19 @@ form {
     margin-top: 15px;
 }
 
-.check {
+.check2 {
     width: 15px;
     height: 15px;
+    margin-left: 1%;
 }
 
 .color {
     float: right;
+    margin-top: -3%;
 }
 
 .addwinBut {
-    margin-top: 50px;
+    margin-top: 20%;
     border-color: #f75c49;
     background: white;
     width: 100%;
@@ -590,4 +589,60 @@ form {
     background-color: #f75c49;
     color: white;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 25% 25% 25%;
+    }
+    .more,
+    .text,
+    .horizontal_dotted_line {
+        display: none;
+    }
+    .infoE {
+        display: none;
+    }
+    .wrapper2 {
+        float: left;
+        width: 100px;
+    }
+    .info {
+        margin-top: 15%;
+        padding-bottom: 0%;
+    }
+    .container {
+        width: 50px;
+    }
+    .star {
+        left: 200%;
+    }
+    .initials {
+        top: 25%;
+        left: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 40% 40%;
+    }
+    .search {
+        font-size: 8px;
+        border-left: 1%;
+    }
+    .menu,
+    .menu2 {
+        margin-right: 60%;
+        margin-left: -5%;
+    }
+    .addBut {
+        margin-top: -60%;
+    }
+    .info {
+        display: none;
+    }
+    .container {
+        width: 50px;
+    }
 }
