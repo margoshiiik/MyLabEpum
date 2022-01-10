@@ -38,7 +38,6 @@ body {
 
 .search:hover,
 .addBut:hover {
-    border-color: #f75c49;
     background-color: #f75c49;
     color: white;
     font-weight: bolder;
@@ -67,6 +66,8 @@ body {
 }
 
 #wrapper {
+    display: flexbox;
+    flex-direction: column;
     width: 100%;
     margin: 30px 0px 0px 5%;
 }
@@ -104,8 +105,8 @@ body {
 .vertical_dotted_line {
     border-left: 2px dotted black;
     height: 100px;
-    margin-left: 5%;
-    margin-right: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .filter {
@@ -168,17 +169,16 @@ details>summary {
 }
 
 .name {
-    margin: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
-    padding-top: 15%;
-}
-
-.surname {
-    font-size: 20px;
-    margin: auto;
+    padding-top: 5%;
 }
 
 .country {
+    padding-top: 30px;
     font-size: 15px;
     margin: auto;
 }
@@ -188,7 +188,7 @@ summary {
     grid-template-rows: 50% 20% 20% 20%;
 }
 
-table {
+.content-table {
     margin: auto;
     table-layout: fixed;
     width: 100%;
@@ -223,18 +223,24 @@ td {
     font-size: 13px;
 }
 
-.col {
+#nameTable,
+#ageTable,
+#genderTable,
+#countryTable {
     font-size: 17px;
     border-bottom: 2px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.col:hover {
+#nameTable:hover,
+#ageTable:hover,
+#genderTable:hover,
+#countryTable:hover {
     border-bottom: 4px solid black;
     background-color: #fafafa;
 }
 
-tbody tr:nth-child(odd) {
+tbody .trr:nth-child(odd) {
     background-color: white;
 }
 
@@ -242,7 +248,7 @@ tbody td:nth-child(4) {
     text-align: center;
 }
 
-tbody tr:nth-child(even) {
+tbody .trr:nth-child(even) {
     background-color: #f9f5f9;
 }
 
@@ -255,7 +261,7 @@ tbody tr:nth-child(even) {
 .three,
 .points,
 .last {
-    border: white;
+    border: none;
     background-color: white;
     color: rgb(140, 180, 255);
 }
@@ -406,17 +412,10 @@ tbody tr:nth-child(even) {
     color: #548eaa;
 }
 
-#okno,
-#okno2,
-#okno3,
-#okno4,
-#okno5,
-#okno6,
-#okno7,
-#okno8 {
+.popup_window {
     z-index: 9999;
     width: 50%;
-    height: 400px;
+    height: 500px;
     text-align: center;
     padding: 15px;
     border: 1px solid rgb(41, 41, 41);
@@ -432,14 +431,7 @@ tbody tr:nth-child(even) {
     background-color: white;
 }
 
-#okno:target,
-#okno2:target,
-#okno3:target,
-#okno4:target,
-#okno5:target,
-#okno6:target,
-#okno7:target,
-#okno8:target {
+.popup_window:target {
     display: block;
 }
 
@@ -585,7 +577,6 @@ form {
 }
 
 .addwinBut:hover {
-    border-color: #f75c49;
     background-color: #f75c49;
     color: white;
     font-weight: bolder;
@@ -612,7 +603,7 @@ form {
         padding-bottom: 0%;
     }
     .container {
-        width: 50px;
+        width: 500px;
     }
     .star {
         left: 200%;
@@ -629,7 +620,7 @@ form {
     }
     .search {
         font-size: 8px;
-        border-left: 1%;
+        padding-left: 1%;
     }
     .menu,
     .menu2 {
@@ -643,6 +634,47 @@ form {
         display: none;
     }
     .container {
-        width: 50px;
+        width: 350px;
     }
+}
+
+.ageForFilter {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filterFilter {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 45%;
+}
+
+.myButt {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(101, 163, 190);
+    border: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+.myButt:hover {
+    background-color: white;
+    color: rgb(101, 163, 190);
+}
+
+.map {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+}
+
+.canvas {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 50px;
 }
